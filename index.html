@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="./node_modules/vanilla-picker/dist/vanilla-picker.csp.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet"
+  </head>
+  <body>
+    <button class="parent">Click me</button>
+    <div class="color-element">Color me</div>
+  </body>
+  <script src="./node_modules/vanilla-picker/dist/vanilla-picker.csp.min.js"></script>
+
+  <script>
+    const parent = document.querySelector('.parent');
+    const colorElement = document.querySelector('.color-element');
+    const picker = new Picker(parent);
+
+    picker.onChange = function (color) {
+      colorElement.style.background = color.rgbaString;
+    };
+  </script>
+</html>
