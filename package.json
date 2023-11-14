@@ -1,0 +1,26 @@
+{
+  "name": "practic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vanilla-picker": "^2.12.2"
+  },
+  "devDependencies": {
+    "http-server": "14.1.1"
+  },
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orcas-90/domashka-picker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orcas-90/domashka-picker/issues"
+  },
+  "homepage": "https://github.com/orcas-90/domashka-picker#readme"
+}
